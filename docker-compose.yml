@@ -1,12 +1,12 @@
 version: "3.9"
 services:
-  chanchito:
+  gatito:
     build: .
     ports:
       - "3000:3000"
     links:
-      - monguito
-  monguito:
+      - shinuamai
+  shinuamai:
     image: mongo
     ports:
       - "27017:27017"

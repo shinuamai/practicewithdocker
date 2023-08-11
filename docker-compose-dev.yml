@@ -1,16 +1,16 @@
 version: "3.9"
 services:
-  chanchito:
+  gatito:
     build:
       context: .
       dockerfile: Dockerfile.dev
     ports:
       - "3000:3000"
     links:
-      - monguito
+      - shinuamai
     volumes:
       - .:/home/app
-  monguito:
+  shinuamai:
     image: mongo
     ports:
       - "27017:27017"
